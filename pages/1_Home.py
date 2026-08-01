@@ -33,5 +33,3 @@ with col2:
     st.metric("Machine Learning Models", "2")
 
 st.divider()
-
-st.info("👈 Use the sidebar to explore the dashboard.")
