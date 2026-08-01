@@ -162,6 +162,15 @@ if st.button("Predict Severity", use_container_width=True):
 
     })
 
+    st.write("Input Columns")
+    st.write(input_df.columns.tolist())
+    
+    st.write("Input Data")
+    st.dataframe(input_df)
+    
+    st.write("Expected Columns")
+    st.write(preprocessor.feature_names_in_)
+
     X = preprocessor.transform(input_df)
 
     prediction = model.predict(X)
